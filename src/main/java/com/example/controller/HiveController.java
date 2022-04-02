@@ -19,7 +19,7 @@ public class HiveController {
 
     @RequestMapping("/list")
     public List<Map<String, Object>> list() {
-        String sql = "select * from t2";
+        String sql = "select * from consume";
         List<Map<String, Object>> list = jdbcTemplate.queryForList(sql);
         return list;
     }
